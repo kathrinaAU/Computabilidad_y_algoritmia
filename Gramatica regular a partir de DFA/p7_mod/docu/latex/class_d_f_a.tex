@@ -1,0 +1,371 @@
+\hypertarget{class_d_f_a}{}\section{D\+FA Class Reference}
+\label{class_d_f_a}\index{D\+FA@{D\+FA}}
+
+
+{\ttfamily \#include $<$D\+F\+A.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_f_a_a0739bd751a325dd162604ed63fadea69}{D\+FA} ()
+\item 
+\hyperlink{class_d_f_a_a8ea9d7e634546e4138c011d5b4e47e3d}{D\+FA} (char Nombre\+\_\+\+Fichero\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{class_d_f_a_aa6398a02d0f2d3a57cee0c7d8b3ec9e1}{$\sim$\+D\+FA} (void)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ \hyperlink{class_d_f_a_a427b050f652917a2ef10c6f0bcc62feb}{nueva\+\_\+particion} (set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ P\+I\+\_\+viejo, bool ejec)
+\item 
+void \hyperlink{class_d_f_a_acbe2cc4d41a1e30a8c185b262189ac71}{Mostrar\+\_\+\+Particion} (set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ set\+\_\+aux)
+\item 
+void \hyperlink{class_d_f_a_a0e252de663175ef960d025d8b78cbc6d}{Cargar\+\_\+\+D\+FA} (char Nombre\+\_\+\+Fichero\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{class_d_f_a_aa5259d18788a67e78b21be91dbadc88f}{Mostrar\+\_\+infor\+\_\+\+D\+FA} (void)
+\item 
+void \hyperlink{class_d_f_a_a056c38fca9a65b60acea799ebe9b743b}{Analizar\+\_\+\+Cadena} (void)
+\item 
+bool \hyperlink{class_d_f_a_a58c2890860965eb2c1dc337f667f92e5}{verificar\+\_\+simbolos} (char $\ast$Cadena)
+\item 
+void \hyperlink{class_d_f_a_a169da2171e0e1182cd1da0948df45172}{mostrar\+\_\+alfabeto} ()
+\item 
+void \hyperlink{class_d_f_a_abaac46234616f0feda45b0a91ce78d39}{detectar\+\_\+muerte} (void)
+\item 
+void \hyperlink{class_d_f_a_a3b9768781e98480f0f9677fadb3eb78e}{alfabetizando} ()
+\item 
+void \hyperlink{class_d_f_a_abcfd9884cece764167a8c3c8fa083497}{Exportar\+\_\+\+D\+FA} ()
+\item 
+\hyperlink{class_d_f_a}{D\+FA} \hyperlink{class_d_f_a_a9dc081c267475f9d5099dfff03ced6a2}{Minimizar\+\_\+\+D\+FA} (bool muestra\+\_\+\+Ejecucion)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ \hyperlink{class_d_f_a_ac38ab36866af60c6948dfb20f713b9d6}{reconstruir\+\_\+\+Dfa} (set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ Subconjuntos)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ \hyperlink{class_d_f_a_a3c6637fde6efa43f75399b6407636cda}{descomponer} (set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ Subconjuntos, char a)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ \hyperlink{class_d_f_a_a228e7a01035c7ea79794111a0644b1a3}{particionar} (set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ G, char symbol, set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ Subconjuntos)
+\item 
+\hyperlink{class_d_f_a}{D\+FA} \hyperlink{class_d_f_a_a0e0bb665a8738f1fd8d4062cd8301fcc}{reconstruir\+\_\+\+D\+FA} (set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ Subconjuntos)
+\item 
+\hyperlink{classestado__t}{estado\+\_\+t} \hyperlink{class_d_f_a_ad92a42b4d642834add9a14f85b3c1aa7}{to\+\_\+estado} (int nombre)
+\item 
+\hyperlink{class_gramatica}{Gramatica} \hyperlink{class_d_f_a_a2ea435af1720ebc8b478cb15200bd825}{Crear\+\_\+\+Gramatica} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ \hyperlink{class_d_f_a_a6030e3446246552a16a7de723b08964e}{Estados\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Clase que representa un N\+FA 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_f_a_a0739bd751a325dd162604ed63fadea69}\label{class_d_f_a_a0739bd751a325dd162604ed63fadea69}} 
+\index{D\+FA@{D\+FA}!D\+FA@{D\+FA}}
+\index{D\+FA@{D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{D\+F\+A()}{DFA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+F\+A\+::\+D\+FA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Cpnstructor de la clase sin parámetros. \mbox{\Hypertarget{class_d_f_a_a8ea9d7e634546e4138c011d5b4e47e3d}\label{class_d_f_a_a8ea9d7e634546e4138c011d5b4e47e3d}} 
+\index{D\+FA@{D\+FA}!D\+FA@{D\+FA}}
+\index{D\+FA@{D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{D\+F\+A()}{DFA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+F\+A\+::\+D\+FA (\begin{DoxyParamCaption}\item[{char}]{Nombre\+\_\+\+Fichero\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Cpnstructor de la clase
+
+
+\begin{DoxyParams}{Parameters}
+{\em Fichero} & que introducimos para realizar sobre Ã©l las opciones del programa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_aa6398a02d0f2d3a57cee0c7d8b3ec9e1}\label{class_d_f_a_aa6398a02d0f2d3a57cee0c7d8b3ec9e1}} 
+\index{D\+FA@{D\+FA}!````~D\+FA@{$\sim$\+D\+FA}}
+\index{````~D\+FA@{$\sim$\+D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{$\sim$\+D\+F\+A()}{~DFA()}}
+{\footnotesize\ttfamily D\+F\+A\+::$\sim$\+D\+FA (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Destructor de la clase 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_f_a_a3b9768781e98480f0f9677fadb3eb78e}\label{class_d_f_a_a3b9768781e98480f0f9677fadb3eb78e}} 
+\index{D\+FA@{D\+FA}!alfabetizando@{alfabetizando}}
+\index{alfabetizando@{alfabetizando}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{alfabetizando()}{alfabetizando()}}
+{\footnotesize\ttfamily void D\+F\+A\+::alfabetizando (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que inserta en un set los sÃ­mbolos del alfabeto \mbox{\Hypertarget{class_d_f_a_a056c38fca9a65b60acea799ebe9b743b}\label{class_d_f_a_a056c38fca9a65b60acea799ebe9b743b}} 
+\index{D\+FA@{D\+FA}!Analizar\+\_\+\+Cadena@{Analizar\+\_\+\+Cadena}}
+\index{Analizar\+\_\+\+Cadena@{Analizar\+\_\+\+Cadena}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Analizar\+\_\+\+Cadena()}{Analizar\_Cadena()}}
+{\footnotesize\ttfamily void D\+F\+A\+::\+Analizar\+\_\+\+Cadena (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que se encarga de saber si una cadena introducida por teclado es aceptada o no. \mbox{\Hypertarget{class_d_f_a_a0e252de663175ef960d025d8b78cbc6d}\label{class_d_f_a_a0e252de663175ef960d025d8b78cbc6d}} 
+\index{D\+FA@{D\+FA}!Cargar\+\_\+\+D\+FA@{Cargar\+\_\+\+D\+FA}}
+\index{Cargar\+\_\+\+D\+FA@{Cargar\+\_\+\+D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Cargar\+\_\+\+D\+F\+A()}{Cargar\_DFA()}}
+{\footnotesize\ttfamily void D\+F\+A\+::\+Cargar\+\_\+\+D\+FA (\begin{DoxyParamCaption}\item[{char}]{Nombre\+\_\+\+Fichero\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo usaado para cargar un fichero nfa
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nombre} & del fichero que se introduce para poder realizar las opciones del programa en base a ese archivo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_a2ea435af1720ebc8b478cb15200bd825}\label{class_d_f_a_a2ea435af1720ebc8b478cb15200bd825}} 
+\index{D\+FA@{D\+FA}!Crear\+\_\+\+Gramatica@{Crear\+\_\+\+Gramatica}}
+\index{Crear\+\_\+\+Gramatica@{Crear\+\_\+\+Gramatica}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Crear\+\_\+\+Gramatica()}{Crear\_Gramatica()}}
+{\footnotesize\ttfamily \hyperlink{class_gramatica}{Gramatica} D\+F\+A\+::\+Crear\+\_\+\+Gramatica (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Método que devuelve convierte un dfa a una gramatica. \mbox{\Hypertarget{class_d_f_a_a3c6637fde6efa43f75399b6407636cda}\label{class_d_f_a_a3c6637fde6efa43f75399b6407636cda}} 
+\index{D\+FA@{D\+FA}!descomponer@{descomponer}}
+\index{descomponer@{descomponer}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{descomponer()}{descomponer()}}
+{\footnotesize\ttfamily set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ D\+F\+A\+::descomponer (\begin{DoxyParamCaption}\item[{set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$}]{Subconjuntos,  }\item[{char}]{a }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que se encarga de recorrer el subconjunto y llamar a particionar para guardar el resultado en Temp 
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados principal que contiene a todos los conjuntos. \\
+\hline
+{\em Char} & que contiene el caracter que vamos a evaluar para ver si la transición se dirige hacia otro conjunto. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_abaac46234616f0feda45b0a91ce78d39}\label{class_d_f_a_abaac46234616f0feda45b0a91ce78d39}} 
+\index{D\+FA@{D\+FA}!detectar\+\_\+muerte@{detectar\+\_\+muerte}}
+\index{detectar\+\_\+muerte@{detectar\+\_\+muerte}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{detectar\+\_\+muerte()}{detectar\_muerte()}}
+{\footnotesize\ttfamily void D\+F\+A\+::detectar\+\_\+muerte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que comprueba con la ayuda de la funciÃ³n \char`\"{}estado\+\_\+muerte\char`\"{} si el estado es un estado de muerte. \mbox{\Hypertarget{class_d_f_a_abcfd9884cece764167a8c3c8fa083497}\label{class_d_f_a_abcfd9884cece764167a8c3c8fa083497}} 
+\index{D\+FA@{D\+FA}!Exportar\+\_\+\+D\+FA@{Exportar\+\_\+\+D\+FA}}
+\index{Exportar\+\_\+\+D\+FA@{Exportar\+\_\+\+D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Exportar\+\_\+\+D\+F\+A()}{Exportar\_DFA()}}
+{\footnotesize\ttfamily void D\+F\+A\+::\+Exportar\+\_\+\+D\+FA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que exporta los datos nuevos de minimizar en un fichero. \mbox{\Hypertarget{class_d_f_a_a9dc081c267475f9d5099dfff03ced6a2}\label{class_d_f_a_a9dc081c267475f9d5099dfff03ced6a2}} 
+\index{D\+FA@{D\+FA}!Minimizar\+\_\+\+D\+FA@{Minimizar\+\_\+\+D\+FA}}
+\index{Minimizar\+\_\+\+D\+FA@{Minimizar\+\_\+\+D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Minimizar\+\_\+\+D\+F\+A()}{Minimizar\_DFA()}}
+{\footnotesize\ttfamily \hyperlink{class_d_f_a}{D\+FA} D\+F\+A\+::\+Minimizar\+\_\+\+D\+FA (\begin{DoxyParamCaption}\item[{bool}]{muestra\+\_\+\+Ejecucion }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Método que divide el conjunto de estados en 2\+: Estados de aceptacion y Estados de no aceptacion. Luego llama a nueva partición para realizar las demás particiones segun el comportamiento de las transiciones.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Booleano} & que modificaremos para mostrar la traza o no mostrarla. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_a169da2171e0e1182cd1da0948df45172}\label{class_d_f_a_a169da2171e0e1182cd1da0948df45172}} 
+\index{D\+FA@{D\+FA}!mostrar\+\_\+alfabeto@{mostrar\+\_\+alfabeto}}
+\index{mostrar\+\_\+alfabeto@{mostrar\+\_\+alfabeto}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+alfabeto()}{mostrar\_alfabeto()}}
+{\footnotesize\ttfamily void D\+F\+A\+::mostrar\+\_\+alfabeto (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que muestra el contenido del set alfabeto \mbox{\Hypertarget{class_d_f_a_aa5259d18788a67e78b21be91dbadc88f}\label{class_d_f_a_aa5259d18788a67e78b21be91dbadc88f}} 
+\index{D\+FA@{D\+FA}!Mostrar\+\_\+infor\+\_\+\+D\+FA@{Mostrar\+\_\+infor\+\_\+\+D\+FA}}
+\index{Mostrar\+\_\+infor\+\_\+\+D\+FA@{Mostrar\+\_\+infor\+\_\+\+D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Mostrar\+\_\+infor\+\_\+\+D\+F\+A()}{Mostrar\_infor\_DFA()}}
+{\footnotesize\ttfamily void D\+F\+A\+::\+Mostrar\+\_\+infor\+\_\+\+D\+FA (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que muestra todo el contenido deducible de un fichero.\+nfa \mbox{\Hypertarget{class_d_f_a_acbe2cc4d41a1e30a8c185b262189ac71}\label{class_d_f_a_acbe2cc4d41a1e30a8c185b262189ac71}} 
+\index{D\+FA@{D\+FA}!Mostrar\+\_\+\+Particion@{Mostrar\+\_\+\+Particion}}
+\index{Mostrar\+\_\+\+Particion@{Mostrar\+\_\+\+Particion}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Mostrar\+\_\+\+Particion()}{Mostrar\_Particion()}}
+{\footnotesize\ttfamily void D\+F\+A\+::\+Mostrar\+\_\+\+Particion (\begin{DoxyParamCaption}\item[{set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$}]{set\+\_\+aux }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que muestra un conjunto de conjuntos de estados formado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados auxiliar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_a427b050f652917a2ef10c6f0bcc62feb}\label{class_d_f_a_a427b050f652917a2ef10c6f0bcc62feb}} 
+\index{D\+FA@{D\+FA}!nueva\+\_\+particion@{nueva\+\_\+particion}}
+\index{nueva\+\_\+particion@{nueva\+\_\+particion}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{nueva\+\_\+particion()}{nueva\_particion()}}
+{\footnotesize\ttfamily set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ D\+F\+A\+::nueva\+\_\+particion (\begin{DoxyParamCaption}\item[{set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$}]{P\+I\+\_\+viejo,  }\item[{bool}]{ejec }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que devuelve un conjunto de conjuntos de estados, usado para el proceso de minimizar. Se encarga de recorrer el alfabeto y guardar los simbolos para luego llamar a descomponer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados viejo sobre el que voy a ir machacando. \\
+\hline
+{\em Booleano} & que nos indica si voy a enseñar la traza de minimizar o no junto a la exportación. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_a228e7a01035c7ea79794111a0644b1a3}\label{class_d_f_a_a228e7a01035c7ea79794111a0644b1a3}} 
+\index{D\+FA@{D\+FA}!particionar@{particionar}}
+\index{particionar@{particionar}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{particionar()}{particionar()}}
+{\footnotesize\ttfamily set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$ D\+F\+A\+::particionar (\begin{DoxyParamCaption}\item[{set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$}]{G,  }\item[{char}]{symbol,  }\item[{set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$}]{Subconjuntos }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Método que se encarga de comprobar si las transiciones de un estado de un conjunto se dirige con un simbolo a otro estado de otro conjunto. Si esto es así, se introduce en otro conjunto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de estados a los que voy a enumerar y a comprobar \\
+\hline
+{\em Char} & que contiene el caracter que vamos a evaluar para ver si la transición se dirige hacia otro conjunto. \\
+\hline
+{\em Conjunto} & de conjunto de estados principal que contiene a todos los conjuntos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_ac38ab36866af60c6948dfb20f713b9d6}\label{class_d_f_a_ac38ab36866af60c6948dfb20f713b9d6}} 
+\index{D\+FA@{D\+FA}!reconstruir\+\_\+\+Dfa@{reconstruir\+\_\+\+Dfa}}
+\index{reconstruir\+\_\+\+Dfa@{reconstruir\+\_\+\+Dfa}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{reconstruir\+\_\+\+Dfa()}{reconstruir\_Dfa()}}
+{\footnotesize\ttfamily set$<$ set$<$\hyperlink{classestado__t}{estado\+\_\+t}$>$ $>$ D\+F\+A\+::reconstruir\+\_\+\+Dfa (\begin{DoxyParamCaption}\item[{set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$}]{Subconjuntos }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que inserta en un set los sÃ­mbolos del alfabeto 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_a0e0bb665a8738f1fd8d4062cd8301fcc}\label{class_d_f_a_a0e0bb665a8738f1fd8d4062cd8301fcc}} 
+\index{D\+FA@{D\+FA}!reconstruir\+\_\+\+D\+FA@{reconstruir\+\_\+\+D\+FA}}
+\index{reconstruir\+\_\+\+D\+FA@{reconstruir\+\_\+\+D\+FA}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{reconstruir\+\_\+\+D\+F\+A()}{reconstruir\_DFA()}}
+{\footnotesize\ttfamily \hyperlink{class_d_f_a}{D\+FA} D\+F\+A\+::reconstruir\+\_\+\+D\+FA (\begin{DoxyParamCaption}\item[{set$<$ set$<$ \hyperlink{classestado__t}{estado\+\_\+t} $>$ $>$}]{Subconjuntos }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Método que se encarga de colocar bien el resultado una vez hecho la traza.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados principal que contiene a todos los conjuntos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_ad92a42b4d642834add9a14f85b3c1aa7}\label{class_d_f_a_ad92a42b4d642834add9a14f85b3c1aa7}} 
+\index{D\+FA@{D\+FA}!to\+\_\+estado@{to\+\_\+estado}}
+\index{to\+\_\+estado@{to\+\_\+estado}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{to\+\_\+estado()}{to\_estado()}}
+{\footnotesize\ttfamily \hyperlink{classestado__t}{estado\+\_\+t} D\+F\+A\+::to\+\_\+estado (\begin{DoxyParamCaption}\item[{int}]{nombre }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Método que devuelve el estado al que pertenece el identificador (nombre) id\+\_\+ 
+\begin{DoxyParams}{Parameters}
+{\em Entero} & que será el identificador del estado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_f_a_a58c2890860965eb2c1dc337f667f92e5}\label{class_d_f_a_a58c2890860965eb2c1dc337f667f92e5}} 
+\index{D\+FA@{D\+FA}!verificar\+\_\+simbolos@{verificar\+\_\+simbolos}}
+\index{verificar\+\_\+simbolos@{verificar\+\_\+simbolos}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{verificar\+\_\+simbolos()}{verificar\_simbolos()}}
+{\footnotesize\ttfamily bool D\+F\+A\+::verificar\+\_\+simbolos (\begin{DoxyParamCaption}\item[{char $\ast$}]{Cadena }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+MÃ©todo que comprueba si los sÃ­mbolos de la cadena estÃ¡ dentro del set alfabeto.
+
+\begin{DoxyReturn}{Returns}
+Resultado de realizar la comparaciÃ³n. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em T\+R\+UE} & Indica que el sÃ­mbolo sÃ­ coincide con los sÃ­mbolos del alfabeto. \\
+\hline
+{\em F\+A\+L\+SE} & Indica que el sÃ­mbolo no coincide con los sÃ­mbolos del alfabeto.\\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}{Parameters}
+{\em Cadena} & que se introduce por teclado y con la que comprobaremos si los sÃ­mbolos pertenecen al conjunto alfabeto. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_d_f_a_a6030e3446246552a16a7de723b08964e}\label{class_d_f_a_a6030e3446246552a16a7de723b08964e}} 
+\index{D\+FA@{D\+FA}!Estados\+\_\+@{Estados\+\_\+}}
+\index{Estados\+\_\+@{Estados\+\_\+}!D\+FA@{D\+FA}}
+\subsubsection{\texorpdfstring{Estados\+\_\+}{Estados\_}}
+{\footnotesize\ttfamily set$<$\hyperlink{classestado__t}{estado\+\_\+t}$>$ D\+F\+A\+::\+Estados\+\_\+}
+
+Set que contendrÃ¡ a los estados. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_d_f_a_8hpp}{D\+F\+A.\+hpp}\item 
+\hyperlink{_d_f_a_8cpp}{D\+F\+A.\+cpp}\end{DoxyCompactItemize}

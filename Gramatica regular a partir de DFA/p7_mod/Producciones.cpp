@@ -1,0 +1,77 @@
+
+#include "Producciones.hpp"
+
+
+using namespace std;
+
+Produccion::Produccion(){
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+Produccion::~Produccion(){
+	
+}
+
+////////////////////////////////////////////////////////////////////////////////
+char Produccion::get_part_izq() const{
+	return part_izq;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void Produccion::set_part_izq(char i){
+	part_izq=i;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+vector<string> Produccion::get_part_derech() const{
+     return part_derech; //Uso un string en vez de un char para poder  
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void Produccion::set_part_derech(vector<string> m){
+     part_derech=m;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void Produccion::anadir_part_derech(string pd){
+	part_derech.push_back(pd);
+
+}
+////////////////////////////////////////////////////////////////////////////////
+
+bool Produccion::Buscar_part(string e){
+	int cont=0;
+	for (int i=0;i<part_derech.size();i++){
+		if(e==part_derech[i])
+			cont ++;
+    }
+    if(cont>0)
+    	return true;
+    else 
+    	return false;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+Produccion& Produccion::operator=(const Produccion &rhs){
+	this -> part_izq= rhs.part_izq;
+	this -> part_derech= rhs.part_derech;
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+int Produccion::operator==(const Produccion &rhs) const{
+ if(( part_izq==rhs.part_izq) && (part_derech==rhs.part_derech))
+ 	return 1;
+ else
+ 	return 0;
+
+}
+

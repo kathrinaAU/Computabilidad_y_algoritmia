@@ -1,0 +1,11 @@
+2
+a b 
+6
+A B C D E F 
+A -> aB | bC |
+B ->~ | aD | bC |
+C ->~ |
+D -> aD | bE |
+E ->~ | aD | bF |
+F ->~ | aD | bF |
+

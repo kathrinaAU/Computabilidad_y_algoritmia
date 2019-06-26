@@ -1,0 +1,50 @@
+#pragma once
+
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include <set>
+#include <algorithm>
+#include "colores.hpp"
+#include "estado.hpp"
+using namespace std;
+class DFA {
+
+private:
+    
+    unsigned int Numero_Estados_;
+    unsigned int Estado_Inicial_;
+    set <estado_t> Estados_;
+    set <char> Alfabeto; /**< Set que contendrá a los símbolos del NFA. */
+    set <int> Estados_aceptacion;
+    set <int> Estados_no_aceptacion;
+     set< set<estado_t> > Subconjuntos_;
+    
+  
+   
+public:
+    //Constructor:
+    DFA(char Nombre_Fichero[]);
+    //Destructor
+    ~DFA(void);
+    
+    //Métodos de la clase:
+    set< set<Estado> > nueva_particion( set< set<estado_t> > PI_viejo, bool ejec );
+    void Mostrar_Particion(set <set<estado_t> >);
+    void Cargar_DFA(char Nombre_Fichero[]);
+    void Mostrar_infor_DFA(void);
+    void Estados_de_Muerte(void);
+    void Analizar_Cadena(void);
+    bool verificar_simbolos(char *Cadena);
+    void mostrar_alfabeto();
+    void detectar_muerte(void);
+    void alfabetizando();
+    void Exportar_DFA();
+    Estados_ Minimizar_DFA();
+    void Separar_Conjuntos();
+    bool Comprueba_transicion( char simbolo, estado_t e, set<estado_t> subconjunto);
+
+
+    
+    
+};

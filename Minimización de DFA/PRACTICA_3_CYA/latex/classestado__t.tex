@@ -1,0 +1,337 @@
+\hypertarget{classestado__t}{\section{estado\-\_\-t Class Reference}
+\label{classestado__t}\index{estado\-\_\-t@{estado\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$estado.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classestado__t_a8e45cb6ecaf97bb8e9a33f82151f9323}{estado\-\_\-t} ()
+\item 
+\hyperlink{classestado__t_ae6fd334fd74a870dff61d310924e0424}{estado\-\_\-t} (int, bool, int, char $\ast$, int $\ast$)
+\item 
+\hyperlink{classestado__t_ac3dd69d9374264ee0a54868e60773473}{estado\-\_\-t} (const \hyperlink{classestado__t}{estado\-\_\-t} \&)
+\item 
+\hyperlink{classestado__t_afb5a0d229dfbcadc5ccc4a0ee8d02f3c}{estado\-\_\-t} (int estado\-\_\-devuelve, bool acept, int tam)
+\item 
+virtual \hyperlink{classestado__t_ab8d1d9470fbf8083b8107ff6c70be4d7}{$\sim$estado\-\_\-t} (void)
+\item 
+\hyperlink{classestado__t}{estado\-\_\-t} \& \hyperlink{classestado__t_ad7a36a03430853701e4591e05187a14e}{operator=} (const \hyperlink{classestado__t}{estado\-\_\-t} \&rhs)
+\item 
+int \hyperlink{classestado__t_aed35e32cb89561ac0e3f3f0b71cc22a0}{operator==} (const \hyperlink{classestado__t}{estado\-\_\-t} \&rhs) const 
+\item 
+int \hyperlink{classestado__t_a54fceb2e5e0b3da90999f6baed168bbb}{operator$<$} (const \hyperlink{classestado__t}{estado\-\_\-t} \&rhs) const 
+\item 
+bool \hyperlink{classestado__t_a7d6d9f2a6b73019a1d6293b2821a21cd}{estado\-\_\-muerte} ()
+\item 
+int \hyperlink{classestado__t_a0599ddc0084caf5b9c454dcbc2098cb9}{get\-\_\-next} (char simbolo)
+\item 
+\hyperlink{structtransicion}{transicion} $\ast$ \hyperlink{classestado__t_acc668d2ecfcc37002042f8ee6099c034}{get\-\_\-transicion} ()
+\item 
+void \hyperlink{classestado__t_a3e1a732c3eeb1d678e70bbefd3243a39}{set\-Trans} (\hyperlink{structtransicion}{transicion} $\ast$trans)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classestado__t_aba266da7e77f2633dc7296babf9893c9}{id\-\_\-}
+\item 
+bool \hyperlink{classestado__t_ada7ab9464df89cd55932c81d54a0a246}{Aceptado\-\_\-}
+\item 
+unsigned int \hyperlink{classestado__t_af3db2b51130263e7a94d36018303bb48}{Transiciones\-\_\-}
+\item 
+char $\ast$ \hyperlink{classestado__t_af9afe7e6634f65b6e5e664810d5941d1}{Simbolo\-\_\-}
+\item 
+int $\ast$ \hyperlink{classestado__t_a2b1d0cb5028c3e687bc954c1dccb6fa5}{Destino\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classestado__t_abd9a0348d2219634dee1ab5c9d3a2083}{operator$<$$<$} (std\-::ostream \&, const \hyperlink{classestado__t}{estado\-\_\-t} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Clase que representa a estado. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classestado__t_a8e45cb6ecaf97bb8e9a33f82151f9323}{\index{estado\-\_\-t@{estado\-\_\-t}!estado\-\_\-t@{estado\-\_\-t}}
+\index{estado\-\_\-t@{estado\-\_\-t}!estado_t@{estado\-\_\-t}}
+\subsubsection[{estado\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}estado\-\_\-t\-::estado\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_a8e45cb6ecaf97bb8e9a33f82151f9323}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Constructor por defecto de la clase \hypertarget{classestado__t_ae6fd334fd74a870dff61d310924e0424}{\index{estado\-\_\-t@{estado\-\_\-t}!estado\-\_\-t@{estado\-\_\-t}}
+\index{estado\-\_\-t@{estado\-\_\-t}!estado_t@{estado\-\_\-t}}
+\subsubsection[{estado\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}estado\-\_\-t\-::estado\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{bool}]{Estado\-\_\-\-Aceptacion, }
+\item[{int}]{Transitions, }
+\item[{char $\ast$}]{Simbolo, }
+\item[{int $\ast$}]{Destino}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_ae6fd334fd74a870dff61d310924e0424}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Constructor por parÃ¡metros de la clase
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & identificador \\
+\hline
+{\em bool} & aceptado \\
+\hline
+{\em int} & Transiciones\-\_\- \\
+\hline
+{\em char} & $\ast$ Simbolo\-\_\- \\
+\hline
+{\em int} & $\ast$ Destino\-\_\- \\
+\hline
+\end{DoxyParams}
+\hypertarget{classestado__t_ac3dd69d9374264ee0a54868e60773473}{\index{estado\-\_\-t@{estado\-\_\-t}!estado\-\_\-t@{estado\-\_\-t}}
+\index{estado\-\_\-t@{estado\-\_\-t}!estado_t@{estado\-\_\-t}}
+\subsubsection[{estado\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}estado\-\_\-t\-::estado\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const {\bf estado\-\_\-t} \&}]{copyin}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_ac3dd69d9374264ee0a54868e60773473}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Constructor con parÃ¡metro de la clase \hypertarget{classestado__t_afb5a0d229dfbcadc5ccc4a0ee8d02f3c}{\index{estado\-\_\-t@{estado\-\_\-t}!estado\-\_\-t@{estado\-\_\-t}}
+\index{estado\-\_\-t@{estado\-\_\-t}!estado_t@{estado\-\_\-t}}
+\subsubsection[{estado\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}estado\-\_\-t\-::estado\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{int}]{estado\-\_\-devuelve, }
+\item[{bool}]{acept, }
+\item[{int}]{tam}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_afb5a0d229dfbcadc5ccc4a0ee8d02f3c}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Constructor por parÃ¡metros de la clase
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & identificador \\
+\hline
+{\em bool} & aceptado \\
+\hline
+{\em int} & numero de transiciones \\
+\hline
+\end{DoxyParams}
+\hypertarget{classestado__t_ab8d1d9470fbf8083b8107ff6c70be4d7}{\index{estado\-\_\-t@{estado\-\_\-t}!$\sim$estado\-\_\-t@{$\sim$estado\-\_\-t}}
+\index{$\sim$estado\-\_\-t@{$\sim$estado\-\_\-t}!estado_t@{estado\-\_\-t}}
+\subsubsection[{$\sim$estado\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}estado\-\_\-t\-::$\sim$estado\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classestado__t_ab8d1d9470fbf8083b8107ff6c70be4d7}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Destructor virtual de la clase 
+
+\subsection{Member Function Documentation}
+\hypertarget{classestado__t_a7d6d9f2a6b73019a1d6293b2821a21cd}{\index{estado\-\_\-t@{estado\-\_\-t}!estado\-\_\-muerte@{estado\-\_\-muerte}}
+\index{estado\-\_\-muerte@{estado\-\_\-muerte}!estado_t@{estado\-\_\-t}}
+\subsubsection[{estado\-\_\-muerte}]{\setlength{\rightskip}{0pt plus 5cm}bool estado\-\_\-t\-::estado\-\_\-muerte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_a7d6d9f2a6b73019a1d6293b2821a21cd}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+FunciÃ³n que devuelve si el estado es un estado de muerte.
+
+\begin{DoxyReturn}{Returns}
+Indica el resultado de la comparaciÃ³n 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em T\-R\-U\-E} & Indica que es un estado de muerte \\
+\hline
+{\em F\-A\-L\-S\-E} & Indica que no es un estado de muerte. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classestado__t_a0599ddc0084caf5b9c454dcbc2098cb9}{\index{estado\-\_\-t@{estado\-\_\-t}!get\-\_\-next@{get\-\_\-next}}
+\index{get\-\_\-next@{get\-\_\-next}!estado_t@{estado\-\_\-t}}
+\subsubsection[{get\-\_\-next}]{\setlength{\rightskip}{0pt plus 5cm}int estado\-\_\-t\-::get\-\_\-next (
+\begin{DoxyParamCaption}
+\item[{char}]{simbolo}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_a0599ddc0084caf5b9c454dcbc2098cb9}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+FunciÃ³n que devuelve el estado destino dado un simbolo del alfabeto
+
+
+\begin{DoxyParams}{Parameters}
+{\em Simbolo} & de la transicion \\
+\hline
+\end{DoxyParams}
+\hypertarget{classestado__t_acc668d2ecfcc37002042f8ee6099c034}{\index{estado\-\_\-t@{estado\-\_\-t}!get\-\_\-transicion@{get\-\_\-transicion}}
+\index{get\-\_\-transicion@{get\-\_\-transicion}!estado_t@{estado\-\_\-t}}
+\subsubsection[{get\-\_\-transicion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf transicion} $\ast$ estado\-\_\-t\-::get\-\_\-transicion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_acc668d2ecfcc37002042f8ee6099c034}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+FunciÃ³n que devuelve de la transicion el destino y simbolo (estructura) \hypertarget{classestado__t_a54fceb2e5e0b3da90999f6baed168bbb}{\index{estado\-\_\-t@{estado\-\_\-t}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!estado_t@{estado\-\_\-t}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}int estado\-\_\-t\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf estado\-\_\-t} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classestado__t_a54fceb2e5e0b3da90999f6baed168bbb}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+16 de octubre de 2017
+
+Sobrecarga del operador para comparar si es menor, retorn un booleano que indica si el estado llamante constante es menor que el pasado por referencia constante.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Referencia constante del estado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El resultado de la comparaciÃƒÆ’Ã‚Â³n. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & El estado llamante constante es menor que el estado pasado por referencia constante. \\
+\hline
+{\em 0} & El estado llamante constante no es menor que el estado pasado por referencia constante. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classestado__t_ad7a36a03430853701e4591e05187a14e}{\index{estado\-\_\-t@{estado\-\_\-t}!operator=@{operator=}}
+\index{operator=@{operator=}!estado_t@{estado\-\_\-t}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf estado\-\_\-t} \& estado\-\_\-t\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf estado\-\_\-t} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_ad7a36a03430853701e4591e05187a14e}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+16 de octubre de 2017
+
+Sobrecarga de operador igual (=)
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Referencia constante del estado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia del estado llamante. 
+\end{DoxyReturn}
+\hypertarget{classestado__t_aed35e32cb89561ac0e3f3f0b71cc22a0}{\index{estado\-\_\-t@{estado\-\_\-t}!operator==@{operator==}}
+\index{operator==@{operator==}!estado_t@{estado\-\_\-t}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}int estado\-\_\-t\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf estado\-\_\-t} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classestado__t_aed35e32cb89561ac0e3f3f0b71cc22a0}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+16 de octubre de 2017
+
+Sobrecarga del operador para comparar igualdad, que retorna un entero que indica si el identificador del estado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Entero constante que comparamos con el identificador del estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El resultado de la comparaciÃ³n. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & El entero constante coincide con el identificador del estado. @ retval 0 El entero constante no coincide con el identificador del estado. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classestado__t_a3e1a732c3eeb1d678e70bbefd3243a39}{\index{estado\-\_\-t@{estado\-\_\-t}!set\-Trans@{set\-Trans}}
+\index{set\-Trans@{set\-Trans}!estado_t@{estado\-\_\-t}}
+\subsubsection[{set\-Trans}]{\setlength{\rightskip}{0pt plus 5cm}void estado\-\_\-t\-::set\-Trans (
+\begin{DoxyParamCaption}
+\item[{{\bf transicion} $\ast$}]{trans}
+\end{DoxyParamCaption}
+)}}\label{classestado__t_a3e1a732c3eeb1d678e70bbefd3243a39}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+FunciÃ³n que devuelve de la transicion el destino y simbolo (estructura) 
+\begin{DoxyParams}{Parameters}
+{\em transicion} & estructura que contiene el estado siguiente y el simbolo. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classestado__t_abd9a0348d2219634dee1ab5c9d3a2083}{\index{estado\-\_\-t@{estado\-\_\-t}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!estado_t@{estado\-\_\-t}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{output, }
+\item[{const {\bf estado\-\_\-t} \&}]{bbb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classestado__t_abd9a0348d2219634dee1ab5c9d3a2083}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Se utiliza para poder usar la sobrecarga del operador cout. \begin{DoxyVerb}  @param    os Referencia del flujo de salida. 
+  @param    x Referencia constante al estado.
+  @return   Referencia del flujo de salida.  \end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classestado__t_ada7ab9464df89cd55932c81d54a0a246}{\index{estado\-\_\-t@{estado\-\_\-t}!Aceptado\-\_\-@{Aceptado\-\_\-}}
+\index{Aceptado\-\_\-@{Aceptado\-\_\-}!estado_t@{estado\-\_\-t}}
+\subsubsection[{Aceptado\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}bool estado\-\_\-t\-::\-Aceptado\-\_\-}}\label{classestado__t_ada7ab9464df89cd55932c81d54a0a246}
+Entero que identifica al estado del N\-F\-A \hypertarget{classestado__t_a2b1d0cb5028c3e687bc954c1dccb6fa5}{\index{estado\-\_\-t@{estado\-\_\-t}!Destino\-\_\-@{Destino\-\_\-}}
+\index{Destino\-\_\-@{Destino\-\_\-}!estado_t@{estado\-\_\-t}}
+\subsubsection[{Destino\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ estado\-\_\-t\-::\-Destino\-\_\-}}\label{classestado__t_a2b1d0cb5028c3e687bc954c1dccb6fa5}
+Entero $\ast$ que se utiliza para guardar el destino de los estados del N\-F\-A. \hypertarget{classestado__t_aba266da7e77f2633dc7296babf9893c9}{\index{estado\-\_\-t@{estado\-\_\-t}!id\-\_\-@{id\-\_\-}}
+\index{id\-\_\-@{id\-\_\-}!estado_t@{estado\-\_\-t}}
+\subsubsection[{id\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int estado\-\_\-t\-::id\-\_\-}}\label{classestado__t_aba266da7e77f2633dc7296babf9893c9}
+Entero que identifica al estado del N\-F\-A \hypertarget{classestado__t_af9afe7e6634f65b6e5e664810d5941d1}{\index{estado\-\_\-t@{estado\-\_\-t}!Simbolo\-\_\-@{Simbolo\-\_\-}}
+\index{Simbolo\-\_\-@{Simbolo\-\_\-}!estado_t@{estado\-\_\-t}}
+\subsubsection[{Simbolo\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ estado\-\_\-t\-::\-Simbolo\-\_\-}}\label{classestado__t_af9afe7e6634f65b6e5e664810d5941d1}
+Char $\ast$ que se utiliza para guardar los simbolos del N\-F\-A \hypertarget{classestado__t_af3db2b51130263e7a94d36018303bb48}{\index{estado\-\_\-t@{estado\-\_\-t}!Transiciones\-\_\-@{Transiciones\-\_\-}}
+\index{Transiciones\-\_\-@{Transiciones\-\_\-}!estado_t@{estado\-\_\-t}}
+\subsubsection[{Transiciones\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int estado\-\_\-t\-::\-Transiciones\-\_\-}}\label{classestado__t_af3db2b51130263e7a94d36018303bb48}
+Entero sin signo que identifica el nÃºmero de transiciones por estado 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+estado.\-hpp\item 
+estado.\-cpp\end{DoxyCompactItemize}

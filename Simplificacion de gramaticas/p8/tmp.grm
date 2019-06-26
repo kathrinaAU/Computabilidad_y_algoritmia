@@ -1,0 +1,10 @@
+2
+a b 
+5
+S A B C D 
+S -> A|Aa|ab|b
+A -> B|ab|b
+B -> C|ab|b
+C -> D|ab|b
+D -> b
+

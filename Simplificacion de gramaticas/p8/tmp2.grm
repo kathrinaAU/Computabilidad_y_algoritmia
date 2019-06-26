@@ -1,0 +1,10 @@
+2
+a b 
+5
+S A B C D 
+S ->  |  | B | BB | C | D| b | bC |A |AB |B 
+A ->  |  | B | BB | BBB | a
+B -> |  | B | BB 
+C ->  |  | B | BB | ~
+D -> |  | B | BB 
+

@@ -1,0 +1,353 @@
+\hypertarget{classestado__t}{}\section{estado\+\_\+t Class Reference}
+\label{classestado__t}\index{estado\+\_\+t@{estado\+\_\+t}}
+
+
+{\ttfamily \#include $<$estado.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classestado__t_a8e45cb6ecaf97bb8e9a33f82151f9323}{estado\+\_\+t} ()
+\item 
+\hyperlink{classestado__t_ae6fd334fd74a870dff61d310924e0424}{estado\+\_\+t} (int, bool, int, char $\ast$, int $\ast$)
+\item 
+\hyperlink{classestado__t_ac3dd69d9374264ee0a54868e60773473}{estado\+\_\+t} (const \hyperlink{classestado__t}{estado\+\_\+t} \&)
+\item 
+\hyperlink{classestado__t_afb5a0d229dfbcadc5ccc4a0ee8d02f3c}{estado\+\_\+t} (int estado\+\_\+devuelve, bool acept, int tam)
+\item 
+virtual \hyperlink{classestado__t_ab8d1d9470fbf8083b8107ff6c70be4d7}{$\sim$estado\+\_\+t} (void)
+\item 
+\hyperlink{classestado__t}{estado\+\_\+t} \& \hyperlink{classestado__t_ad7a36a03430853701e4591e05187a14e}{operator=} (const \hyperlink{classestado__t}{estado\+\_\+t} \&rhs)
+\item 
+int \hyperlink{classestado__t_a5d35ac54bd5ae1378809345816366f23}{operator==} (const \hyperlink{classestado__t}{estado\+\_\+t} \&rhs) const
+\item 
+int \hyperlink{classestado__t_ae05cc164f6ac82bf50b92a826a120b39}{operator$<$} (const \hyperlink{classestado__t}{estado\+\_\+t} \&rhs) const
+\item 
+bool \hyperlink{classestado__t_a95a8cfda0f144b54f4b4ad205f25726c}{estado\+\_\+muerte} () const
+\item 
+int \hyperlink{classestado__t_a0599ddc0084caf5b9c454dcbc2098cb9}{get\+\_\+next} (char simbolo)
+\item 
+\hyperlink{structtransicion}{transicion} $\ast$ \hyperlink{classestado__t_aff818e6eb56c6d862d0e5fc7ca35d1c7}{get\+\_\+transicion} () const
+\item 
+void \hyperlink{classestado__t_a3e1a732c3eeb1d678e70bbefd3243a39}{set\+Trans} (\hyperlink{structtransicion}{transicion} $\ast$trans)
+\item 
+bool \hyperlink{classestado__t_a82629cf1be67ef78156ac248cd57200d}{get\+\_\+aceptacion} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classestado__t_aba266da7e77f2633dc7296babf9893c9}{id\+\_\+}
+\item 
+bool \hyperlink{classestado__t_ada7ab9464df89cd55932c81d54a0a246}{Aceptado\+\_\+}
+\item 
+unsigned int \hyperlink{classestado__t_af3db2b51130263e7a94d36018303bb48}{Transiciones\+\_\+}
+\item 
+char $\ast$ \hyperlink{classestado__t_af9afe7e6634f65b6e5e664810d5941d1}{Simbolo\+\_\+}
+\item 
+int $\ast$ \hyperlink{classestado__t_a2b1d0cb5028c3e687bc954c1dccb6fa5}{Destino\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classestado__t_abd9a0348d2219634dee1ab5c9d3a2083}{operator$<$$<$} (std\+::ostream \&, const \hyperlink{classestado__t}{estado\+\_\+t} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Clase que representa a estado. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classestado__t_a8e45cb6ecaf97bb8e9a33f82151f9323}\label{classestado__t_a8e45cb6ecaf97bb8e9a33f82151f9323}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{estado\+\_\+t()}{estado\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily estado\+\_\+t\+::estado\+\_\+t (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Constructor por defecto de la clase \mbox{\Hypertarget{classestado__t_ae6fd334fd74a870dff61d310924e0424}\label{classestado__t_ae6fd334fd74a870dff61d310924e0424}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{estado\+\_\+t()}{estado\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily estado\+\_\+t\+::estado\+\_\+t (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{bool}]{Estado\+\_\+\+Aceptacion,  }\item[{int}]{Transitions,  }\item[{char $\ast$}]{Simbolo,  }\item[{int $\ast$}]{Destino }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Constructor por parÃ¡metros de la clase
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & identificador \\
+\hline
+{\em bool} & aceptado \\
+\hline
+{\em int} & Transiciones\+\_\+ \\
+\hline
+{\em char} & $\ast$ Simbolo\+\_\+ \\
+\hline
+{\em int} & $\ast$ Destino\+\_\+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classestado__t_ac3dd69d9374264ee0a54868e60773473}\label{classestado__t_ac3dd69d9374264ee0a54868e60773473}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{estado\+\_\+t()}{estado\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily estado\+\_\+t\+::estado\+\_\+t (\begin{DoxyParamCaption}\item[{const \hyperlink{classestado__t}{estado\+\_\+t} \&}]{copyin }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Constructor con parÃ¡metro de la clase \mbox{\Hypertarget{classestado__t_afb5a0d229dfbcadc5ccc4a0ee8d02f3c}\label{classestado__t_afb5a0d229dfbcadc5ccc4a0ee8d02f3c}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{estado\+\_\+t()}{estado\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily estado\+\_\+t\+::estado\+\_\+t (\begin{DoxyParamCaption}\item[{int}]{estado\+\_\+devuelve,  }\item[{bool}]{acept,  }\item[{int}]{tam }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Constructor por parÃ¡metros de la clase
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & identificador \\
+\hline
+{\em bool} & aceptado \\
+\hline
+{\em int} & numero de transiciones \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classestado__t_ab8d1d9470fbf8083b8107ff6c70be4d7}\label{classestado__t_ab8d1d9470fbf8083b8107ff6c70be4d7}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!````~estado\+\_\+t@{$\sim$estado\+\_\+t}}
+\index{````~estado\+\_\+t@{$\sim$estado\+\_\+t}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{$\sim$estado\+\_\+t()}{~estado\_t()}}
+{\footnotesize\ttfamily estado\+\_\+t\+::$\sim$estado\+\_\+t (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Destructor virtual de la clase 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classestado__t_a95a8cfda0f144b54f4b4ad205f25726c}\label{classestado__t_a95a8cfda0f144b54f4b4ad205f25726c}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!estado\+\_\+muerte@{estado\+\_\+muerte}}
+\index{estado\+\_\+muerte@{estado\+\_\+muerte}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{estado\+\_\+muerte()}{estado\_muerte()}}
+{\footnotesize\ttfamily bool estado\+\_\+t\+::estado\+\_\+muerte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+FunciÃ³n que devuelve si el estado es un estado de muerte.
+
+\begin{DoxyReturn}{Returns}
+Indica el resultado de la comparaciÃ³n 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em T\+R\+UE} & Indica que es un estado de muerte \\
+\hline
+{\em F\+A\+L\+SE} & Indica que no es un estado de muerte. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classestado__t_a82629cf1be67ef78156ac248cd57200d}\label{classestado__t_a82629cf1be67ef78156ac248cd57200d}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!get\+\_\+aceptacion@{get\+\_\+aceptacion}}
+\index{get\+\_\+aceptacion@{get\+\_\+aceptacion}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+\_\+aceptacion()}{get\_aceptacion()}}
+{\footnotesize\ttfamily bool estado\+\_\+t\+::get\+\_\+aceptacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+FunciÃ³n que devuelve si el estado es de aceptacion o no. \begin{DoxyReturn}{Returns}
+Indica el resultado de la comparaciÃ³n. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em T\+R\+UE} & Indica que es un estado de aceptación. \\
+\hline
+{\em F\+A\+L\+SE} & Indica que no es un estado de aceptación. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classestado__t_a0599ddc0084caf5b9c454dcbc2098cb9}\label{classestado__t_a0599ddc0084caf5b9c454dcbc2098cb9}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!get\+\_\+next@{get\+\_\+next}}
+\index{get\+\_\+next@{get\+\_\+next}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+\_\+next()}{get\_next()}}
+{\footnotesize\ttfamily int estado\+\_\+t\+::get\+\_\+next (\begin{DoxyParamCaption}\item[{char}]{simbolo }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+FunciÃ³n que devuelve el estado destino dado un simbolo del alfabeto
+
+
+\begin{DoxyParams}{Parameters}
+{\em Simbolo} & de la transicion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classestado__t_aff818e6eb56c6d862d0e5fc7ca35d1c7}\label{classestado__t_aff818e6eb56c6d862d0e5fc7ca35d1c7}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!get\+\_\+transicion@{get\+\_\+transicion}}
+\index{get\+\_\+transicion@{get\+\_\+transicion}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+\_\+transicion()}{get\_transicion()}}
+{\footnotesize\ttfamily \hyperlink{structtransicion}{transicion} $\ast$ estado\+\_\+t\+::get\+\_\+transicion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+FunciÃ³n que devuelve de la transicion el destino y simbolo (estructura) \mbox{\Hypertarget{classestado__t_ae05cc164f6ac82bf50b92a826a120b39}\label{classestado__t_ae05cc164f6ac82bf50b92a826a120b39}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily int estado\+\_\+t\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classestado__t}{estado\+\_\+t} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+16 de octubre de 2017
+
+Sobrecarga del operador para comparar si es menor, retorn un booleano que indica si el estado llamante constante es menor que el pasado por referencia constante.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Referencia constante del estado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El resultado de la comparaciÃƒÆ’Ã‚Â³n. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & El estado llamante constante es menor que el estado pasado por referencia constante. \\
+\hline
+{\em 0} & El estado llamante constante no es menor que el estado pasado por referencia constante. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classestado__t_ad7a36a03430853701e4591e05187a14e}\label{classestado__t_ad7a36a03430853701e4591e05187a14e}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!operator=@{operator=}}
+\index{operator=@{operator=}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classestado__t}{estado\+\_\+t} \& estado\+\_\+t\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classestado__t}{estado\+\_\+t} \&}]{rhs }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+16 de octubre de 2017
+
+Sobrecarga de operador igual (=)
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Referencia constante del estado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia del estado llamante. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classestado__t_a5d35ac54bd5ae1378809345816366f23}\label{classestado__t_a5d35ac54bd5ae1378809345816366f23}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!operator==@{operator==}}
+\index{operator==@{operator==}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily int estado\+\_\+t\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classestado__t}{estado\+\_\+t} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+16 de octubre de 2017
+
+Sobrecarga del operador para comparar igualdad, que retorna un entero que indica si el identificador del estado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Entero constante que comparamos con el identificador del estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El resultado de la comparaciÃ³n. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & El entero constante coincide con el identificador del estado. @ retval 0 El entero constante no coincide con el identificador del estado. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classestado__t_a3e1a732c3eeb1d678e70bbefd3243a39}\label{classestado__t_a3e1a732c3eeb1d678e70bbefd3243a39}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!set\+Trans@{set\+Trans}}
+\index{set\+Trans@{set\+Trans}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{set\+Trans()}{setTrans()}}
+{\footnotesize\ttfamily void estado\+\_\+t\+::set\+Trans (\begin{DoxyParamCaption}\item[{\hyperlink{structtransicion}{transicion} $\ast$}]{trans }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+FunciÃ³n que devuelve de la transicion el destino y simbolo (estructura) 
+\begin{DoxyParams}{Parameters}
+{\em transicion} & estructura que contiene el estado siguiente y el simbolo. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classestado__t_abd9a0348d2219634dee1ab5c9d3a2083}\label{classestado__t_abd9a0348d2219634dee1ab5c9d3a2083}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{output,  }\item[{const \hyperlink{classestado__t}{estado\+\_\+t} \&}]{bbb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+8 de noviembre de 2017
+
+Se utiliza para poder usar la sobrecarga del operador cout. \begin{DoxyVerb}  @param    os Referencia del flujo de salida. 
+  @param    x Referencia constante al estado.
+  @return   Referencia del flujo de salida.  \end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classestado__t_ada7ab9464df89cd55932c81d54a0a246}\label{classestado__t_ada7ab9464df89cd55932c81d54a0a246}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!Aceptado\+\_\+@{Aceptado\+\_\+}}
+\index{Aceptado\+\_\+@{Aceptado\+\_\+}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{Aceptado\+\_\+}{Aceptado\_}}
+{\footnotesize\ttfamily bool estado\+\_\+t\+::\+Aceptado\+\_\+}
+
+Entero que identifica al estado del N\+FA \mbox{\Hypertarget{classestado__t_a2b1d0cb5028c3e687bc954c1dccb6fa5}\label{classestado__t_a2b1d0cb5028c3e687bc954c1dccb6fa5}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!Destino\+\_\+@{Destino\+\_\+}}
+\index{Destino\+\_\+@{Destino\+\_\+}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{Destino\+\_\+}{Destino\_}}
+{\footnotesize\ttfamily int$\ast$ estado\+\_\+t\+::\+Destino\+\_\+}
+
+Entero $\ast$ que se utiliza para guardar el destino de los estados del N\+FA. \mbox{\Hypertarget{classestado__t_aba266da7e77f2633dc7296babf9893c9}\label{classestado__t_aba266da7e77f2633dc7296babf9893c9}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!id\+\_\+@{id\+\_\+}}
+\index{id\+\_\+@{id\+\_\+}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{id\+\_\+}{id\_}}
+{\footnotesize\ttfamily unsigned int estado\+\_\+t\+::id\+\_\+}
+
+Entero que identifica al estado del N\+FA \mbox{\Hypertarget{classestado__t_af9afe7e6634f65b6e5e664810d5941d1}\label{classestado__t_af9afe7e6634f65b6e5e664810d5941d1}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!Simbolo\+\_\+@{Simbolo\+\_\+}}
+\index{Simbolo\+\_\+@{Simbolo\+\_\+}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{Simbolo\+\_\+}{Simbolo\_}}
+{\footnotesize\ttfamily char$\ast$ estado\+\_\+t\+::\+Simbolo\+\_\+}
+
+Char $\ast$ que se utiliza para guardar los simbolos del N\+FA \mbox{\Hypertarget{classestado__t_af3db2b51130263e7a94d36018303bb48}\label{classestado__t_af3db2b51130263e7a94d36018303bb48}} 
+\index{estado\+\_\+t@{estado\+\_\+t}!Transiciones\+\_\+@{Transiciones\+\_\+}}
+\index{Transiciones\+\_\+@{Transiciones\+\_\+}!estado\+\_\+t@{estado\+\_\+t}}
+\subsubsection{\texorpdfstring{Transiciones\+\_\+}{Transiciones\_}}
+{\footnotesize\ttfamily unsigned int estado\+\_\+t\+::\+Transiciones\+\_\+}
+
+Entero sin signo que identifica el nÃºmero de transiciones por estado 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{estado_8hpp}{estado.\+hpp}\item 
+\hyperlink{estado_8cpp}{estado.\+cpp}\end{DoxyCompactItemize}

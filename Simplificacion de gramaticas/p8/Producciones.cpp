@@ -1,0 +1,77 @@
+
+#include "Producciones.hpp"
+
+
+using namespace std;
+
+Produccion::Produccion(){
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+Produccion::~Produccion(){
+	
+}
+
+////////////////////////////////////////////////////////////////////////////////
+char Produccion::get_part_izq() const{
+	return part_izq;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void Produccion::set_part_izq(char i){
+	part_izq=i;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+set<string> Produccion::get_part_derech() const{
+     return part_derech; //Uso un string en vez de un char para poder  
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void Produccion::set_part_derech(set<string> &m){
+     part_derech=m;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void Produccion::anadir_part_derech(string pd){
+	part_derech.insert(pd);
+
+}
+////////////////////////////////////////////////////////////////////////////////
+
+bool Produccion::Buscar_part(string e){
+	bool encontrado = false;
+	
+	if(part_derech.find(e) != part_derech.end() )
+		encontrado = true;
+		
+	return encontrado;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+Produccion& Produccion::operator=(const Produccion &rhs){
+	this -> part_izq= rhs.part_izq;
+	this -> part_derech= rhs.part_derech;
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+int Produccion::operator==(const Produccion &rhs) const{
+ if(( part_izq==rhs.part_izq) && (part_derech==rhs.part_derech))
+ 	return 1;
+ else
+ 	return 0;
+
+}
+
+void Produccion::limpiarParteDerecha() {
+	this->part_derech.clear();
+}

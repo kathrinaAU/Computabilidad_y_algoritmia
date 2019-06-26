@@ -1,0 +1,362 @@
+\hypertarget{classDFA}{\section{D\-F\-A Class Reference}
+\label{classDFA}\index{D\-F\-A@{D\-F\-A}}
+}
+
+
+{\ttfamily \#include $<$D\-F\-A.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDFA_a0739bd751a325dd162604ed63fadea69}{D\-F\-A} ()
+\item 
+\hyperlink{classDFA_a8ea9d7e634546e4138c011d5b4e47e3d}{D\-F\-A} (char Nombre\-\_\-\-Fichero\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{classDFA_aa6398a02d0f2d3a57cee0c7d8b3ec9e1}{$\sim$\-D\-F\-A} (void)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ \hyperlink{classDFA_a427b050f652917a2ef10c6f0bcc62feb}{nueva\-\_\-particion} (set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ P\-I\-\_\-viejo, bool ejec)
+\item 
+void \hyperlink{classDFA_acbe2cc4d41a1e30a8c185b262189ac71}{Mostrar\-\_\-\-Particion} (set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ set\-\_\-aux)
+\item 
+void \hyperlink{classDFA_a0e252de663175ef960d025d8b78cbc6d}{Cargar\-\_\-\-D\-F\-A} (char Nombre\-\_\-\-Fichero\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{classDFA_aa5259d18788a67e78b21be91dbadc88f}{Mostrar\-\_\-infor\-\_\-\-D\-F\-A} (void)
+\item 
+void \hyperlink{classDFA_a056c38fca9a65b60acea799ebe9b743b}{Analizar\-\_\-\-Cadena} (void)
+\item 
+bool \hyperlink{classDFA_a58c2890860965eb2c1dc337f667f92e5}{verificar\-\_\-simbolos} (char $\ast$Cadena)
+\item 
+void \hyperlink{classDFA_a169da2171e0e1182cd1da0948df45172}{mostrar\-\_\-alfabeto} ()
+\item 
+void \hyperlink{classDFA_abaac46234616f0feda45b0a91ce78d39}{detectar\-\_\-muerte} (void)
+\item 
+void \hyperlink{classDFA_a3b9768781e98480f0f9677fadb3eb78e}{alfabetizando} ()
+\item 
+void \hyperlink{classDFA_abcfd9884cece764167a8c3c8fa083497}{Exportar\-\_\-\-D\-F\-A} ()
+\item 
+\hyperlink{classDFA}{D\-F\-A} \hyperlink{classDFA_a9dc081c267475f9d5099dfff03ced6a2}{Minimizar\-\_\-\-D\-F\-A} (bool muestra\-\_\-\-Ejecucion)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ \hyperlink{classDFA_ac38ab36866af60c6948dfb20f713b9d6}{reconstruir\-\_\-\-Dfa} (set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ Subconjuntos)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ \hyperlink{classDFA_a3c6637fde6efa43f75399b6407636cda}{descomponer} (set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ Subconjuntos, char a)
+\item 
+set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ \hyperlink{classDFA_a228e7a01035c7ea79794111a0644b1a3}{particionar} (set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ G, char symbol, set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ Subconjuntos)
+\item 
+\hyperlink{classDFA}{D\-F\-A} \hyperlink{classDFA_a0e0bb665a8738f1fd8d4062cd8301fcc}{reconstruir\-\_\-\-D\-F\-A} (set$<$ set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ $>$ Subconjuntos)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ \hyperlink{classestado__t}{estado\-\_\-t} $>$ \hyperlink{classDFA_a6030e3446246552a16a7de723b08964e}{Estados\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Clase que representa un N\-F\-A 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDFA_a0739bd751a325dd162604ed63fadea69}{\index{D\-F\-A@{D\-F\-A}!D\-F\-A@{D\-F\-A}}
+\index{D\-F\-A@{D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}D\-F\-A\-::\-D\-F\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a0739bd751a325dd162604ed63fadea69}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Cpnstructor de la clase sin parámetros. \hypertarget{classDFA_a8ea9d7e634546e4138c011d5b4e47e3d}{\index{D\-F\-A@{D\-F\-A}!D\-F\-A@{D\-F\-A}}
+\index{D\-F\-A@{D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}D\-F\-A\-::\-D\-F\-A (
+\begin{DoxyParamCaption}
+\item[{char}]{Nombre\-\_\-\-Fichero\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a8ea9d7e634546e4138c011d5b4e47e3d}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Cpnstructor de la clase
+
+
+\begin{DoxyParams}{Parameters}
+{\em Fichero} & que introducimos para realizar sobre Ã©l las opciones del programa. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_aa6398a02d0f2d3a57cee0c7d8b3ec9e1}{\index{D\-F\-A@{D\-F\-A}!$\sim$\-D\-F\-A@{$\sim$\-D\-F\-A}}
+\index{$\sim$\-D\-F\-A@{$\sim$\-D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{$\sim$\-D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}D\-F\-A\-::$\sim$\-D\-F\-A (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_aa6398a02d0f2d3a57cee0c7d8b3ec9e1}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Destructor de la clase 
+
+\subsection{Member Function Documentation}
+\hypertarget{classDFA_a3b9768781e98480f0f9677fadb3eb78e}{\index{D\-F\-A@{D\-F\-A}!alfabetizando@{alfabetizando}}
+\index{alfabetizando@{alfabetizando}!DFA@{D\-F\-A}}
+\subsubsection[{alfabetizando}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::alfabetizando (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a3b9768781e98480f0f9677fadb3eb78e}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que inserta en un set los sÃ­mbolos del alfabeto \hypertarget{classDFA_a056c38fca9a65b60acea799ebe9b743b}{\index{D\-F\-A@{D\-F\-A}!Analizar\-\_\-\-Cadena@{Analizar\-\_\-\-Cadena}}
+\index{Analizar\-\_\-\-Cadena@{Analizar\-\_\-\-Cadena}!DFA@{D\-F\-A}}
+\subsubsection[{Analizar\-\_\-\-Cadena}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::\-Analizar\-\_\-\-Cadena (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a056c38fca9a65b60acea799ebe9b743b}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que se encarga de saber si una cadena introducida por teclado es aceptada o no. \hypertarget{classDFA_a0e252de663175ef960d025d8b78cbc6d}{\index{D\-F\-A@{D\-F\-A}!Cargar\-\_\-\-D\-F\-A@{Cargar\-\_\-\-D\-F\-A}}
+\index{Cargar\-\_\-\-D\-F\-A@{Cargar\-\_\-\-D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{Cargar\-\_\-\-D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::\-Cargar\-\_\-\-D\-F\-A (
+\begin{DoxyParamCaption}
+\item[{char}]{Nombre\-\_\-\-Fichero\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a0e252de663175ef960d025d8b78cbc6d}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo usaado para cargar un fichero nfa
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nombre} & del fichero que se introduce para poder realizar las opciones del programa en base a ese archivo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_a3c6637fde6efa43f75399b6407636cda}{\index{D\-F\-A@{D\-F\-A}!descomponer@{descomponer}}
+\index{descomponer@{descomponer}!DFA@{D\-F\-A}}
+\subsubsection[{descomponer}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$ D\-F\-A\-::descomponer (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$}]{Subconjuntos, }
+\item[{char}]{a}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a3c6637fde6efa43f75399b6407636cda}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que se encarga de recorrer el subconjunto y llamar a particionar para guardar el resultado en Temp 
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados principal que contiene a todos los conjuntos. \\
+\hline
+{\em Char} & que contiene el caracter que vamos a evaluar para ver si la transición se dirige hacia otro conjunto. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_abaac46234616f0feda45b0a91ce78d39}{\index{D\-F\-A@{D\-F\-A}!detectar\-\_\-muerte@{detectar\-\_\-muerte}}
+\index{detectar\-\_\-muerte@{detectar\-\_\-muerte}!DFA@{D\-F\-A}}
+\subsubsection[{detectar\-\_\-muerte}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::detectar\-\_\-muerte (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_abaac46234616f0feda45b0a91ce78d39}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que comprueba con la ayuda de la funciÃ³n \char`\"{}estado\-\_\-muerte\char`\"{} si el estado es un estado de muerte. \hypertarget{classDFA_abcfd9884cece764167a8c3c8fa083497}{\index{D\-F\-A@{D\-F\-A}!Exportar\-\_\-\-D\-F\-A@{Exportar\-\_\-\-D\-F\-A}}
+\index{Exportar\-\_\-\-D\-F\-A@{Exportar\-\_\-\-D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{Exportar\-\_\-\-D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::\-Exportar\-\_\-\-D\-F\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_abcfd9884cece764167a8c3c8fa083497}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que exporta los datos nuevos de minimizar en un fichero. \hypertarget{classDFA_a9dc081c267475f9d5099dfff03ced6a2}{\index{D\-F\-A@{D\-F\-A}!Minimizar\-\_\-\-D\-F\-A@{Minimizar\-\_\-\-D\-F\-A}}
+\index{Minimizar\-\_\-\-D\-F\-A@{Minimizar\-\_\-\-D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{Minimizar\-\_\-\-D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-F\-A} D\-F\-A\-::\-Minimizar\-\_\-\-D\-F\-A (
+\begin{DoxyParamCaption}
+\item[{bool}]{muestra\-\_\-\-Ejecucion}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a9dc081c267475f9d5099dfff03ced6a2}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Método que divide el conjunto de estados en 2\-: Estados de aceptacion y Estados de no aceptacion. Luego llama a nueva partición para realizar las demás particiones segun el comportamiento de las transiciones.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Booleano} & que modificaremos para mostrar la traza o no mostrarla. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_a169da2171e0e1182cd1da0948df45172}{\index{D\-F\-A@{D\-F\-A}!mostrar\-\_\-alfabeto@{mostrar\-\_\-alfabeto}}
+\index{mostrar\-\_\-alfabeto@{mostrar\-\_\-alfabeto}!DFA@{D\-F\-A}}
+\subsubsection[{mostrar\-\_\-alfabeto}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::mostrar\-\_\-alfabeto (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a169da2171e0e1182cd1da0948df45172}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que muestra el contenido del set alfabeto \hypertarget{classDFA_aa5259d18788a67e78b21be91dbadc88f}{\index{D\-F\-A@{D\-F\-A}!Mostrar\-\_\-infor\-\_\-\-D\-F\-A@{Mostrar\-\_\-infor\-\_\-\-D\-F\-A}}
+\index{Mostrar\-\_\-infor\-\_\-\-D\-F\-A@{Mostrar\-\_\-infor\-\_\-\-D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{Mostrar\-\_\-infor\-\_\-\-D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::\-Mostrar\-\_\-infor\-\_\-\-D\-F\-A (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDFA_aa5259d18788a67e78b21be91dbadc88f}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que muestra todo el contenido deducible de un fichero.\-nfa \hypertarget{classDFA_acbe2cc4d41a1e30a8c185b262189ac71}{\index{D\-F\-A@{D\-F\-A}!Mostrar\-\_\-\-Particion@{Mostrar\-\_\-\-Particion}}
+\index{Mostrar\-\_\-\-Particion@{Mostrar\-\_\-\-Particion}!DFA@{D\-F\-A}}
+\subsubsection[{Mostrar\-\_\-\-Particion}]{\setlength{\rightskip}{0pt plus 5cm}void D\-F\-A\-::\-Mostrar\-\_\-\-Particion (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$}]{set\-\_\-aux}
+\end{DoxyParamCaption}
+)}}\label{classDFA_acbe2cc4d41a1e30a8c185b262189ac71}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que muestra un conjunto de conjuntos de estados formado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados auxiliar. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_a427b050f652917a2ef10c6f0bcc62feb}{\index{D\-F\-A@{D\-F\-A}!nueva\-\_\-particion@{nueva\-\_\-particion}}
+\index{nueva\-\_\-particion@{nueva\-\_\-particion}!DFA@{D\-F\-A}}
+\subsubsection[{nueva\-\_\-particion}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$ D\-F\-A\-::nueva\-\_\-particion (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$}]{P\-I\-\_\-viejo, }
+\item[{bool}]{ejec}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a427b050f652917a2ef10c6f0bcc62feb}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que devuelve un conjunto de conjuntos de estados, usado para el proceso de minimizar. Se encarga de recorrer el alfabeto y guardar los simbolos para luego llamar a descomponer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados viejo sobre el que voy a ir machacando. \\
+\hline
+{\em Booleano} & que nos indica si voy a enseñar la traza de minimizar o no junto a la exportación. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_a228e7a01035c7ea79794111a0644b1a3}{\index{D\-F\-A@{D\-F\-A}!particionar@{particionar}}
+\index{particionar@{particionar}!DFA@{D\-F\-A}}
+\subsubsection[{particionar}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$ D\-F\-A\-::particionar (
+\begin{DoxyParamCaption}
+\item[{set$<$ {\bf estado\-\_\-t} $>$}]{G, }
+\item[{char}]{symbol, }
+\item[{set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$}]{Subconjuntos}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a228e7a01035c7ea79794111a0644b1a3}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Método que se encarga de comprobar si las transiciones de un estado de un conjunto se dirige con un simbolo a otro estado de otro conjunto. Si esto es así, se introduce en otro conjunto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de estados a los que voy a enumerar y a comprobar \\
+\hline
+{\em Char} & que contiene el caracter que vamos a evaluar para ver si la transición se dirige hacia otro conjunto. \\
+\hline
+{\em Conjunto} & de conjunto de estados principal que contiene a todos los conjuntos \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_ac38ab36866af60c6948dfb20f713b9d6}{\index{D\-F\-A@{D\-F\-A}!reconstruir\-\_\-\-Dfa@{reconstruir\-\_\-\-Dfa}}
+\index{reconstruir\-\_\-\-Dfa@{reconstruir\-\_\-\-Dfa}!DFA@{D\-F\-A}}
+\subsubsection[{reconstruir\-\_\-\-Dfa}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ set$<${\bf estado\-\_\-t}$>$ $>$ D\-F\-A\-::reconstruir\-\_\-\-Dfa (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$}]{Subconjuntos}
+\end{DoxyParamCaption}
+)}}\label{classDFA_ac38ab36866af60c6948dfb20f713b9d6}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que inserta en un set los sÃ­mbolos del alfabeto 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_a0e0bb665a8738f1fd8d4062cd8301fcc}{\index{D\-F\-A@{D\-F\-A}!reconstruir\-\_\-\-D\-F\-A@{reconstruir\-\_\-\-D\-F\-A}}
+\index{reconstruir\-\_\-\-D\-F\-A@{reconstruir\-\_\-\-D\-F\-A}!DFA@{D\-F\-A}}
+\subsubsection[{reconstruir\-\_\-\-D\-F\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-F\-A} D\-F\-A\-::reconstruir\-\_\-\-D\-F\-A (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf estado\-\_\-t} $>$ $>$}]{Subconjuntos}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a0e0bb665a8738f1fd8d4062cd8301fcc}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+Método que se encarga de colocar bien el resultado una vez hecho la traza.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Conjunto} & de conjunto de estados principal que contiene a todos los conjuntos \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDFA_a58c2890860965eb2c1dc337f667f92e5}{\index{D\-F\-A@{D\-F\-A}!verificar\-\_\-simbolos@{verificar\-\_\-simbolos}}
+\index{verificar\-\_\-simbolos@{verificar\-\_\-simbolos}!DFA@{D\-F\-A}}
+\subsubsection[{verificar\-\_\-simbolos}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-F\-A\-::verificar\-\_\-simbolos (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Cadena}
+\end{DoxyParamCaption}
+)}}\label{classDFA_a58c2890860965eb2c1dc337f667f92e5}
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\-edu.\-es})
+
+22 de octubre de 2017
+
+MÃ©todo que comprueba si los sÃ­mbolos de la cadena estÃ¡ dentro del set alfabeto.
+
+\begin{DoxyReturn}{Returns}
+Resultado de realizar la comparaciÃ³n. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em T\-R\-U\-E} & Indica que el sÃ­mbolo sÃ­ coincide con los sÃ­mbolos del alfabeto. \\
+\hline
+{\em F\-A\-L\-S\-E} & Indica que el sÃ­mbolo no coincide con los sÃ­mbolos del alfabeto.\\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}{Parameters}
+{\em Cadena} & que se introduce por teclado y con la que comprobaremos si los sÃ­mbolos pertenecen al conjunto alfabeto. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDFA_a6030e3446246552a16a7de723b08964e}{\index{D\-F\-A@{D\-F\-A}!Estados\-\_\-@{Estados\-\_\-}}
+\index{Estados\-\_\-@{Estados\-\_\-}!DFA@{D\-F\-A}}
+\subsubsection[{Estados\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}set$<${\bf estado\-\_\-t}$>$ D\-F\-A\-::\-Estados\-\_\-}}\label{classDFA_a6030e3446246552a16a7de723b08964e}
+Set que contendrÃ¡ a los estados. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+D\-F\-A.\-hpp\item 
+D\-F\-A.\-cpp\end{DoxyCompactItemize}

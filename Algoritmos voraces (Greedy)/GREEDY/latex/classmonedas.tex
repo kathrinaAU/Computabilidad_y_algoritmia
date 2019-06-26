@@ -1,0 +1,95 @@
+\hypertarget{classmonedas}{}\section{Referencia de la Clase monedas}
+\label{classmonedas}\index{monedas@{monedas}}
+
+
+{\ttfamily \#include $<$monedas.\+hpp$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmonedas_ac076bd0d307e0ef9a4a3ad14a1a24c57}{monedas} ()
+\item 
+bool \hyperlink{classmonedas_a3503581dd367fb446e903ea74f206156}{comprobar\+\_\+devolucion} (int pos, int a\+\_\+devolver, int suma)
+\item 
+bool \hyperlink{classmonedas_aa1d4f92b35bfc29a2972d075abcb0e08}{devolver\+\_\+cambio} (float cantidad)
+\item 
+bool \hyperlink{classmonedas_a034d41cb66e5408e5b7a377bce6046bd}{devolver\+\_\+cambio\+\_\+mejorado} (float cantidad)
+\item 
+void \hyperlink{classmonedas_a1fc02876da5a98ecb96e81f62fda9ec6}{mostrar\+\_\+resultados} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classmonedas_ac076bd0d307e0ef9a4a3ad14a1a24c57}\label{classmonedas_ac076bd0d307e0ef9a4a3ad14a1a24c57}} 
+\index{monedas@{monedas}!monedas@{monedas}}
+\index{monedas@{monedas}!monedas@{monedas}}
+\subsubsection{\texorpdfstring{monedas()}{monedas()}}
+{\footnotesize\ttfamily monedas\+::monedas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+Miércoles 13 de Diciembre de 2017
+
+Constructor de la clase sin parámetros. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classmonedas_a3503581dd367fb446e903ea74f206156}\label{classmonedas_a3503581dd367fb446e903ea74f206156}} 
+\index{monedas@{monedas}!comprobar\+\_\+devolucion@{comprobar\+\_\+devolucion}}
+\index{comprobar\+\_\+devolucion@{comprobar\+\_\+devolucion}!monedas@{monedas}}
+\subsubsection{\texorpdfstring{comprobar\+\_\+devolucion()}{comprobar\_devolucion()}}
+{\footnotesize\ttfamily bool monedas\+::comprobar\+\_\+devolucion (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{a\+\_\+devolver,  }\item[{int}]{suma }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+Miércoles 13 de Diciembre de 2017
+
+Método que comprueba si la cantidad del monedero en esa posicion es $<$= al dinero exigido.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em entero} & que nos ayuda a saber la posicion del vector monedero. \\
+\hline
+{\em entero} & que nos indica la cantidad que el usuario ha introducido por teclado. \\
+\hline
+{\em entero} & que nos ayuda a mantener la cuenta de las monedas que estamos usando para llegar a tener el a\+\_\+devolver. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmonedas_aa1d4f92b35bfc29a2972d075abcb0e08}\label{classmonedas_aa1d4f92b35bfc29a2972d075abcb0e08}} 
+\index{monedas@{monedas}!devolver\+\_\+cambio@{devolver\+\_\+cambio}}
+\index{devolver\+\_\+cambio@{devolver\+\_\+cambio}!monedas@{monedas}}
+\subsubsection{\texorpdfstring{devolver\+\_\+cambio()}{devolver\_cambio()}}
+{\footnotesize\ttfamily bool monedas\+::devolver\+\_\+cambio (\begin{DoxyParamCaption}\item[{float}]{cantidad }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+Miércoles 13 de Diciembre de 2017
+
+Método que dado una cantidad de dinero introducido, convierte los euros en centimos y va sumando e introduciendo en la lista a aquellos con los que todavía no se sobrepase de la cantidad introducida. Para ello, se recorre el vector, se comprueba si suma es menor que a\+\_\+devolver y luego se asegura de que cantidad del monedero deberemos de utilizar ya que si se sobrepasa cogeremos la siguiente menor que la primera y así con el resto de casos.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em flotante} & que indica la cantidad de dinero introducido por el usuario. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmonedas_a034d41cb66e5408e5b7a377bce6046bd}\label{classmonedas_a034d41cb66e5408e5b7a377bce6046bd}} 
+\index{monedas@{monedas}!devolver\+\_\+cambio\+\_\+mejorado@{devolver\+\_\+cambio\+\_\+mejorado}}
+\index{devolver\+\_\+cambio\+\_\+mejorado@{devolver\+\_\+cambio\+\_\+mejorado}!monedas@{monedas}}
+\subsubsection{\texorpdfstring{devolver\+\_\+cambio\+\_\+mejorado()}{devolver\_cambio\_mejorado()}}
+{\footnotesize\ttfamily bool monedas\+::devolver\+\_\+cambio\+\_\+mejorado (\begin{DoxyParamCaption}\item[{float}]{cantidad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmonedas_a1fc02876da5a98ecb96e81f62fda9ec6}\label{classmonedas_a1fc02876da5a98ecb96e81f62fda9ec6}} 
+\index{monedas@{monedas}!mostrar\+\_\+resultados@{mostrar\+\_\+resultados}}
+\index{mostrar\+\_\+resultados@{mostrar\+\_\+resultados}!monedas@{monedas}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+resultados()}{mostrar\_resultados()}}
+{\footnotesize\ttfamily void monedas\+::mostrar\+\_\+resultados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kathrina Arrocha UmpiÃ©rrez (\href{mailto:alu0100913293@ull.edu.es}{\tt alu0100913293@ull.\+edu.\+es})
+
+Miércoles 13 de Diciembre de 2017
+
+Método que muestra por pantalla la cantidad de monedas a usar indicando si son euros o centimos 
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{monedas_8hpp}{monedas.\+hpp}\item 
+\hyperlink{monedas_8cpp}{monedas.\+cpp}\end{DoxyCompactItemize}
