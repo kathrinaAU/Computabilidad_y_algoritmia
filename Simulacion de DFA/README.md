@@ -31,7 +31,7 @@ El programa principal debería ofrecer al usuario las siguientes opciones:
 - **Identificar estados de muerte:** al seleccionar esta opción se deberá mostrar por pantalla si el autómata previamente definido tiene estados de muerte y si es así, habrá que indicar cuáles son los identificadores de dichos estados de muerte.
 - **Analizar cadena:** al seleccionar esta opción se deberá solicitar al usuario que introduzca una cadena. Para la cadena indicada por el usuario se deberá determinar si es aceptada o no por el autómata actualmente definido. Al igual que ocurre con las dos opciones anteriores, esta opción tampoco se podrá ejecutar hasta que se haya definido un DFA. El formato de la traza a mostrar por pantalla será el siguiente: 
 
-![Ejemplo aceptada-no_aceptada](images/ejemplo_aceptada-no_aceptada.jpg)
+![Ejemplo aceptada-no_aceptada](images/jemplo_aceptada-no_aceptada.jpg)
 
 Tal y como se indica en la imagen anterior, en primer lugar se deberá mostrar la cadena de entrada. A continuación se indicará cómo va transitando de un estado a otro el autómata según va leyendo la cadena de entrada y finalmente, se deberá mostrar el mensaje “Cadena de entrada ACEPTADA” si la cadena de entrada es aceptada por el DFA o el mensaje “Cadena de entrada NO ACEPTADA” si la cadena de entrada no es aceptada por el DFA. 
 
