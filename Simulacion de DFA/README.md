@@ -17,7 +17,7 @@ El autómata finito determinista vendrá definido en un fichero de texto con ext
 
 A modo de ejemplo, se muestra un autómata junto con la definición del mismo especificada mediante un fichero .dfa
 
-![Ejemplo DFA](images/ejemplo_dfa.jpg)
+![Ejemplo DFA](images/SimulacionDFA.jpg)
 
 El programa deberá detectar que no haya ningún error en la definición del autómata. Esto es, habría que analizar que se cumplen las siguientes condiciones: 
 Existe uno y sólo un estado inicial para el autómata. 
